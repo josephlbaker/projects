@@ -1,2 +1,4 @@
-# projects
-All the projects i've created throughout my web development career
+Technologies used.
+Your process/approach.
+Unsolved problems.
+Your biggest wins and challenges.
