@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Joe Baker</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
 </head>
@@ -18,11 +19,6 @@
         <h1 class="name">Joe Baker</h1>
         <h2 class="title">Front-End Web Developer</br >San Francisco, CA</h2>
       </article>
-<!--     <div>
-      <img class="prof-pic" src="images/profilePic.jpg" alt="">
-      <h1>Joe Baker</h1>
-      <h2>Front-End Web Developer &middot; San Francisco, CA</h2>
-    </div> -->
     </div>
   </header>
 
@@ -37,8 +33,16 @@
   </nav>
 
   <section id="about">
-    <h2>WHO I AM</h2>
-    <p>Software development whiz from the city of brotherly love. I love spreading around my knowledge of programming. Scroll down to look at some of my recent projects.</p>
+    <div class="grid-wrapper articles">
+      <article class="col-half">
+        <h3>WHO I AM</h3>
+        <p>Software development whiz from the city of brotherly love. I love spreading around my knowledge of programming. Scroll down to look at some of my recent projects.</p>
+      </article>
+      <article class="col-half">
+        <h3>WHAT I'M WORKING ON NOW</h3>
+        <p>Currently attending the Software Engineering immersive bootcamp at General Assembly where i'll be learning how to build interactive full-stack web applications.</p>
+      </article>
+    </div>
   </section>
 
   <section id=projects>
@@ -64,13 +68,13 @@
       </div>
 
       <div class="mySlides fade">
-        <div class="numbertext">3 / 5</div>
+        <div class="numbertext">4 / 5</div>
         <img id="myImg4" src="images/giffaw.png" onclick="openModal();currentSlide(4)" style="width:100%">
         <div class="text">Using the giphy API, I created a website which allows you to type in a search term and return a page of all the gifs matching that search term.</div>
       </div>
 
       <div class="mySlides fade">
-        <div class="numbertext">3 / 3</div>
+        <div class="numbertext">5 / 5</div>
         <img id="myImg5" src="images/geoquakes.png" onclick="openModal();currentSlide(5)" style="width:100%">
         <div class="text">Using the Google Maps API and the Geoquake API, I created a website which displays all of the most recent earthquakes around the world and pins their location on a map.</div>
       </div>
@@ -148,23 +152,16 @@
   <section id="contact">
     <h2>GET IN TOUCH</h2>
     <form class = "contact">
-      <input type="text" placeholder="Full Name" class="col-third">
+      <input type="text" placeholder="Name" class="col-third">
       <input type="email" placeholder="Email" class="col-third">
-      <input type="text" placeholder="Subject" class="col-third">
+      <input type="text" placeholder="Phone" class="col-third">
       <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-      <button type="submit">Submit</button>
+      <button type="submit">Send</button>
     </form>
   </section>
 
   <footer>
-    <div class="wrap">
-      <div class="social-links">
-        <a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-        <a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-        <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
-      </div>
-    </div>
-    <p class="copyright">&copy;2019 Joseph Baker</p>
+    <p class="copyright">&copy;2019 Joe Baker</p>
   </footer>
 
   <script src="./js/script.js"></script>

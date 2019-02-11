@@ -10,7 +10,6 @@ html {
 body {
   height: 100%;
   width: 100%;
-  background-color: #1B9AAA;
   font-family: 'Karla', sans-serif;
   margin: 0;
   padding: 0;
@@ -29,7 +28,7 @@ header {
 }
 
 .name {
-  margin-top: 200px;
+  margin-top: 250px;
   margin-right: 250px;
   color: white;
 }
@@ -46,21 +45,14 @@ section {
   margin-right: auto;
 }
 
-#about, #projects, #quotes {
-  width: 100%;
-  height: 50vh;
-  max-height: 100%;
-  margin: 0;
-  padding: 0;
-  background-size:100% 100%;
-  background-repeat: no-repeat;
+#about, #projects, #quotes, #contact {
+  margin-top: 120px;
+  margin-bottom: 120px;
 }
 
 #about {
-  background-color: #57BA98;
+  width: 1000px;
 }
-
-/*TEXT STYLES*/
 
 h1, h2, h3, p {
   text-align: center;
@@ -84,6 +76,9 @@ p {
 
 /*NAVBAR STYLES*/
 /*Referenced week 1 project for the nav bar*/
+.hamburger {
+  display: none;
+}
 
 ul {
   margin-top: 0;
@@ -120,6 +115,7 @@ nav a {
   text-align: center;
   color: #ffffff;
   text-decoration: none;
+  margin-top: 15px;
 }
 
 nav a:hover {
@@ -172,13 +168,14 @@ nav a:hover {
 
 /* Caption text */
 .text {
-  color: black;
+  color: white;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
   width: 100%;
   text-align: center;
+  background-color: rgba(9,9,9, .5);
 }
 
 /* Number text (1/3 etc) */
@@ -324,7 +321,7 @@ nav a:hover {
 /*CLASS STYLES*/
 
 .prof-pic {
-  margin-top: 200px;
+  margin-top: 250px;
   height: 300px;
   width: 300px;
   display: block;
@@ -438,9 +435,6 @@ input, textarea {
 
 button {
   cursor: pointer;
-/*  outline: 0;
-*//*  border: 2px solid #44545E;
-  color: #44545E;*/
   padding: 8px 25.5px;
   padding: 8px 1.7rem;
   background-color: transparent;
@@ -462,4 +456,70 @@ button:hover {
 .articles button {
   margin-top: 30px;
   margin-top: 2rem;
+}
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 900px) {
+  nav a {
+    padding: .2rem 2rem;
+  }
+  .col-half h3 {
+    margin-bottom: .5rem;
+  }
+  #about, #projects, #quotes {
+    width: 100%;
+    margin-right: 0 auto;
+    margin-left: 0 auto;
+  }
+  #about h3, #quotes h3{
+    font-size: 24px;
+  }
+  #about p, #quotes p {
+    font-size: 18px;
+  }
+  .col-half {
+    width: 100%;
+    margin: 20px;
+  }
+  .name, .title {
+    margin: 0 auto;
+  }
+  .prof-pic {
+    margin: 80px auto;
+  }
+  .col-third, #contact {
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 650px) {
+  html {
+    font-size: 14px;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav {
+    background-color: transparent;
+  }
+
+  nav a {
+    margin-top: 0;
+  }
+
+  .hamburger {
+    display: block;
+    color: white;
+    font-size: 1.7rem;
+    position: absolute;
+    text-align: left;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #1B9AAA;
+  }
+
 }
