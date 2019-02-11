@@ -1,5 +1,6 @@
 
 //CAROUSEL
+// Used https://www.w3schools.com/howto/howto_js_slideshow.asp
 
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -31,6 +32,7 @@ function showSlides(n) {
 }
 
 //LIGHTBOX
+//Used https://www.w3schools.com/howto/howto_css_modal_images.asp
 // Get the modal
 var modal1 = document.getElementById('myModal1');
 var modal2 = document.getElementById('myModal2');
